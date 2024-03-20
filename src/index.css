@@ -30,7 +30,9 @@ html{
   --orangesh:#ff004f;
   --gray:#CCC;
   --bold-weight:600;
-  --box-shadow:0 0 5px rgba(0,0,0,0.25)
+  --medium-font:1.7rem;
+  --box-shadow:0 0 5px rgba(0,0,0,0.25);
+  --font-large:2rem;
 }
 *{
   margin:0;
@@ -96,8 +98,15 @@ input{
   color:var(--orangesh);
   font-size:1rem;
 }
-
-
+.font-medium{
+  font-size: var(--medium-font);
+}
+.font-large{
+  font-size:var( --font-large);
+}
+button{
+  border:none;
+}
 
 
 
