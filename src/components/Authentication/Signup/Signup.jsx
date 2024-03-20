@@ -92,7 +92,7 @@ const Signup = () => {
     <div className="container">
       <div className="authentication">
         <p className="form-title">ADMIN SIGNUP</p>
-        <form className="login" id="login" onSubmit={handleSubmit}>
+        <form className="signin" id="signin" onSubmit={handleSubmit}>
           <div className="form-group">
             <div className="input-group">
               <input
