@@ -1,0 +1,56 @@
+.navbar {
+  box-shadow: var(--box-shadow);
+
+  .logo {
+    a {
+      color: var(--orangesh);
+      font-size: 3.2rem;
+      font-weight: 600;
+    }
+  }
+
+  .left-side {
+    .profile {
+      img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+      }
+      .small-text {
+        margin-left: 2rem;
+      }
+      @media (max-width: 440px) {
+        img {
+          width: 40px;
+          height: 40px;
+        }
+        .small-text {
+          display:none;
+        }
+      }
+    }
+    .direction-icons.flex {
+      p {
+        margin: 0rem 1rem;
+        display:flex;
+        align-items:center;
+        text-align:center;
+        justify-content: center;
+        i {
+          font-size: 3.5rem;
+          color:var(--buttons-color);
+          cursor:pointer;
+
+          &:hover{
+            color:var(--orangesh);
+          }
+
+        }
+       
+        @media (max-width: 440px){
+          font-size:2.4rem;
+        }
+      }
+    }
+  }
+}
