@@ -3,7 +3,7 @@ import React from 'react'
 const App = () => {
   return (
     <div>
-      <p>nacjnsdjvn</p>
+      <p>PROJECT LOADING</p>
     </div>
   )
 }
