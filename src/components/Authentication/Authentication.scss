@@ -1,0 +1,77 @@
+.authentication {
+  max-width: 700px;
+  margin: 0 auto;
+  width: 95%;
+  border-radius:10px;
+  margin-top:9rem;
+  box-shadow:0 0 5px rgba(0,0,0,0.25);
+
+  .input-group {
+    input {
+      border: none;
+      border-bottom: 1px solid var(--gray);
+      font-size:1.6rem;
+      outline:none;
+      &:focus{
+        border-bottom:2px solid var(--orangesh);
+      }
+
+    }
+    @media(max-width:401px){
+     input{
+        font-size:2rem;
+     }   
+    }
+  }
+
+  .input-group {
+    position: relative;
+    padding:1rem 0rem;
+    .error{
+        position:absolute;
+        bottom:-3rem;
+        font-size:2rem;
+        left:0;
+        z-index:9;
+    }
+    input[type="submit"] {
+      border: none;
+      margin-top: 2.5rem;
+      background:var(--buttons-color);
+      transition:var( --transition-main);
+      color:var(--color-white);
+      &:hover{
+        background:var( --buttons-hover); 
+      }
+    }
+  }
+
+  .authentication-handler{
+    text-align: center;
+    a{
+        cursor: pointer;
+        font-size:1.78em;
+        &:nth-child(2):hover{
+            text-decoration:underline;
+        }
+    }
+  }
+
+  .form-group{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    text-align:center;
+    .input-group{
+        flex-basis:48%;
+    }
+  }
+
+
+  @media(max-width:340px){
+    .form-group{
+        flex-direction: column;
+    }
+  }
+
+}

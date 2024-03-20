@@ -24,7 +24,7 @@ const Navbar = () => {
             </p>
           </div>
            
-          <div className="authentication" >
+          <div className="authentication-btn" >
             <a href="#" className="btn">LOGOUT</a>
           </div>
         </div>

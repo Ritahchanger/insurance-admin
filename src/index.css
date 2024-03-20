@@ -2,6 +2,24 @@
 html{
   font-size:62.5%;
 }
+::-webkit-scrollbar {
+  width:5px; /* Width of the scrollbar */
+}
+
+/* Track (background) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the scrollbar track */
+}
+
+/* Handle (thumb) */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the scrollbar handle on hover */
+}
 :root{
   --buttons-color:#0c78ac;
   --color-white:#fff;
@@ -10,6 +28,8 @@ html{
   --transition-main:all 0.3s;
   --box-shadow:0 0 5px rgba(0,0,0,0.25);
   --orangesh:#ff004f;
+  --gray:#CCC;
+  --bold-weight:600;
 }
 *{
   margin:0;
@@ -20,13 +40,17 @@ html{
 a{
   text-decoration:none;
 }
+input{
+  height:45px;
+  width:100%;
+}
 .container{
   width:100%;
   max-width:1400px;
   margin:0 auto;
 }
 .btn{
-  font-size:1.5rem;
+  font-size:1.1rem;
   color:var(--color-white);
   padding:1rem 2rem;
   background:var(--buttons-color);
@@ -46,6 +70,36 @@ a{
   text-align: center;
   justify-content:center;
 }
+
+
+.main-content{
+  display:flex;
+}
+.main-content .sidebar{
+  flex-basis:20%;
+  border-right:1px solid #ccc;
+}
+.main-content .main{
+  flex-basis:70%;
+}
+.main-title{
+  font-size:2.3rem;
+}
+.form-title{
+  font-size:3.4rem;
+  text-align: center;
+  font-weight: var(--bold-weight);
+  color:var(--buttons-hover);
+}
+.error{
+  color:var(--orangesh);
+  font-size:1.4rem;
+}
+
+
+
+
+
 
 @media(max-width:880px){
   html{

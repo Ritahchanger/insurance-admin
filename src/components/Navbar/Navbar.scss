@@ -12,8 +12,8 @@
   .left-side {
     .profile {
       img {
-        width: 60px;
-        height: 60px;
+        width: 45px;
+        height: 45px;
         border-radius: 50%;
       }
       .small-text {
@@ -25,30 +25,29 @@
           height: 40px;
         }
         .small-text {
-          display:none;
+          display: none;
         }
       }
     }
     .direction-icons.flex {
       p {
         margin: 0rem 1rem;
-        display:flex;
-        align-items:center;
-        text-align:center;
+        display: flex;
+        align-items: center;
+        text-align: center;
         justify-content: center;
         i {
           font-size: 3.5rem;
-          color:var(--buttons-color);
-          cursor:pointer;
+          color: var(--buttons-color);
+          cursor: pointer;
 
-          &:hover{
-            color:var(--orangesh);
+          &:hover {
+            color: var(--orangesh);
           }
-
         }
-       
-        @media (max-width: 440px){
-          font-size:2.4rem;
+
+        @media (max-width: 440px) {
+          font-size: 2.4rem;
         }
       }
     }
